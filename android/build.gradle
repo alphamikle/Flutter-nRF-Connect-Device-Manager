@@ -59,6 +59,10 @@ wire {
 }
 
 dependencies {
-    implementation 'no.nordicsemi.android:mcumgr-ble:1.6.0'
+    implementation ('no.nordicsemi.android:mcumgr-ble:1.6.0') {
+        version {
+            strictly '1.6.0'
+        }
+    }
     implementation 'com.google.protobuf:protobuf-kotlin-lite:3.21.1'
 }
