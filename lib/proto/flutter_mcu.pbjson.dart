@@ -112,6 +112,7 @@ const ProtoUpdateStateChanges_FirmwareUpgradeState$json = {
     {'1': 'SUCCESS', '2': 6},
     {'1': 'REQUEST_MCU_MGR_PARAMETERS', '2': 7},
     {'1': 'ERASE_APP_SETTINGS', '2': 8},
+    {'1': 'BOOTLOADER_INFO', '2': 9},
   ],
 };
 
@@ -120,10 +121,11 @@ final $typed_data.Uint8List protoUpdateStateChangesDescriptor = $convert.base64D
     'ChdQcm90b1VwZGF0ZVN0YXRlQ2hhbmdlcxJJCghvbGRTdGF0ZRgBIAEoDjItLlByb3RvVXBkYX'
     'RlU3RhdGVDaGFuZ2VzLkZpcm13YXJlVXBncmFkZVN0YXRlUghvbGRTdGF0ZRJJCghuZXdTdGF0'
     'ZRgCIAEoDjItLlByb3RvVXBkYXRlU3RhdGVDaGFuZ2VzLkZpcm13YXJlVXBncmFkZVN0YXRlUg'
-    'huZXdTdGF0ZRIaCghjYW5jZWxlZBgDIAEoCFIIY2FuY2VsZWQioQEKFEZpcm13YXJlVXBncmFk'
+    'huZXdTdGF0ZRIaCghjYW5jZWxlZBgDIAEoCFIIY2FuY2VsZWQitgEKFEZpcm13YXJlVXBncmFk'
     'ZVN0YXRlEggKBE5PTkUQABIMCghWQUxJREFURRABEgoKBlVQTE9BRBACEggKBFRFU1QQAxIJCg'
     'VSRVNFVBAEEgsKB0NPTkZJUk0QBRILCgdTVUNDRVNTEAYSHgoaUkVRVUVTVF9NQ1VfTUdSX1BB'
-    'UkFNRVRFUlMQBxIWChJFUkFTRV9BUFBfU0VUVElOR1MQCA==');
+    'UkFNRVRFUlMQBxIWChJFUkFTRV9BUFBfU0VUVElOR1MQCBITCg9CT09UTE9BREVSX0lORk8QCQ'
+    '==');
 
 @$core.Deprecated('Use protoFirmwareUpgradeConfigurationDescriptor instead')
 const ProtoFirmwareUpgradeConfiguration$json = {
@@ -134,8 +136,9 @@ const ProtoFirmwareUpgradeConfiguration$json = {
     {'1': 'pipelineDepth', '3': 3, '4': 1, '5': 3, '10': 'pipelineDepth'},
     {'1': 'byteAlignment', '3': 4, '4': 1, '5': 14, '6': '.ProtoFirmwareUpgradeConfiguration.ImageUploadAlignment', '10': 'byteAlignment'},
     {'1': 'reassemblyBufferSize', '3': 5, '4': 1, '5': 4, '10': 'reassemblyBufferSize'},
+    {'1': 'firmwareUpgradeMode', '3': 6, '4': 1, '5': 14, '6': '.ProtoFirmwareUpgradeConfiguration.FirmwareUpgradeMode', '10': 'firmwareUpgradeMode'},
   ],
-  '4': [ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment$json],
+  '4': [ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment$json, ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode$json],
 };
 
 @$core.Deprecated('Use protoFirmwareUpgradeConfigurationDescriptor instead')
@@ -150,6 +153,17 @@ const ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment$json = {
   ],
 };
 
+@$core.Deprecated('Use protoFirmwareUpgradeConfigurationDescriptor instead')
+const ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode$json = {
+  '1': 'FirmwareUpgradeMode',
+  '2': [
+    {'1': 'TEST_ONLY', '2': 0},
+    {'1': 'CONFIRM_ONLY', '2': 1},
+    {'1': 'TEST_AND_CONFIRM', '2': 2},
+    {'1': 'UPLOAD_ONLY', '2': 3},
+  ],
+};
+
 /// Descriptor for `ProtoFirmwareUpgradeConfiguration`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List protoFirmwareUpgradeConfigurationDescriptor = $convert.base64Decode(
     'CiFQcm90b0Zpcm13YXJlVXBncmFkZUNvbmZpZ3VyYXRpb24SMAoTZXN0aW1hdGVkU3dhcFRpbW'
@@ -157,9 +171,13 @@ final $typed_data.Uint8List protoFirmwareUpgradeConfigurationDescriptor = $conve
     'UhBlcmFzZUFwcFNldHRpbmdzEiQKDXBpcGVsaW5lRGVwdGgYAyABKANSDXBpcGVsaW5lRGVwdG'
     'gSXQoNYnl0ZUFsaWdubWVudBgEIAEoDjI3LlByb3RvRmlybXdhcmVVcGdyYWRlQ29uZmlndXJh'
     'dGlvbi5JbWFnZVVwbG9hZEFsaWdubWVudFINYnl0ZUFsaWdubWVudBIyChRyZWFzc2VtYmx5Qn'
-    'VmZmVyU2l6ZRgFIAEoBFIUcmVhc3NlbWJseUJ1ZmZlclNpemUiYwoUSW1hZ2VVcGxvYWRBbGln'
-    'bm1lbnQSDAoIRElTQUJMRUQQABIMCghUV09fQllURRABEg0KCUZPVVJfQllURRACEg4KCkVJR0'
-    'hUX0JZVEUQAxIQCgxTSVhURUVOX0JZVEUQBA==');
+    'VmZmVyU2l6ZRgFIAEoBFIUcmVhc3NlbWJseUJ1ZmZlclNpemUSaAoTZmlybXdhcmVVcGdyYWRl'
+    'TW9kZRgGIAEoDjI2LlByb3RvRmlybXdhcmVVcGdyYWRlQ29uZmlndXJhdGlvbi5GaXJtd2FyZV'
+    'VwZ3JhZGVNb2RlUhNmaXJtd2FyZVVwZ3JhZGVNb2RlImMKFEltYWdlVXBsb2FkQWxpZ25tZW50'
+    'EgwKCERJU0FCTEVEEAASDAoIVFdPX0JZVEUQARINCglGT1VSX0JZVEUQAhIOCgpFSUdIVF9CWV'
+    'RFEAMSEAoMU0lYVEVFTl9CWVRFEAQiXQoTRmlybXdhcmVVcGdyYWRlTW9kZRINCglURVNUX09O'
+    'TFkQABIQCgxDT05GSVJNX09OTFkQARIUChBURVNUX0FORF9DT05GSVJNEAISDwoLVVBMT0FEX0'
+    '9OTFkQAw==');
 
 @$core.Deprecated('Use protoProgressUpdateStreamArgDescriptor instead')
 const ProtoProgressUpdateStreamArg$json = {

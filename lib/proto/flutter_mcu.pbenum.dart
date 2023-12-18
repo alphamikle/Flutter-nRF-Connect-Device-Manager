@@ -23,6 +23,7 @@ class ProtoUpdateStateChanges_FirmwareUpgradeState extends $pb.ProtobufEnum {
   static const ProtoUpdateStateChanges_FirmwareUpgradeState SUCCESS = ProtoUpdateStateChanges_FirmwareUpgradeState._(6, _omitEnumNames ? '' : 'SUCCESS');
   static const ProtoUpdateStateChanges_FirmwareUpgradeState REQUEST_MCU_MGR_PARAMETERS = ProtoUpdateStateChanges_FirmwareUpgradeState._(7, _omitEnumNames ? '' : 'REQUEST_MCU_MGR_PARAMETERS');
   static const ProtoUpdateStateChanges_FirmwareUpgradeState ERASE_APP_SETTINGS = ProtoUpdateStateChanges_FirmwareUpgradeState._(8, _omitEnumNames ? '' : 'ERASE_APP_SETTINGS');
+  static const ProtoUpdateStateChanges_FirmwareUpgradeState BOOTLOADER_INFO = ProtoUpdateStateChanges_FirmwareUpgradeState._(9, _omitEnumNames ? '' : 'BOOTLOADER_INFO');
 
   static const $core.List<ProtoUpdateStateChanges_FirmwareUpgradeState> values = <ProtoUpdateStateChanges_FirmwareUpgradeState> [
     NONE,
@@ -34,6 +35,7 @@ class ProtoUpdateStateChanges_FirmwareUpgradeState extends $pb.ProtobufEnum {
     SUCCESS,
     REQUEST_MCU_MGR_PARAMETERS,
     ERASE_APP_SETTINGS,
+    BOOTLOADER_INFO,
   ];
 
   static final $core.Map<$core.int, ProtoUpdateStateChanges_FirmwareUpgradeState> _byValue = $pb.ProtobufEnum.initByValue(values);
@@ -61,6 +63,25 @@ class ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment extends $pb.Protobu
   static ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment? valueOf($core.int value) => _byValue[value];
 
   const ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment._($core.int v, $core.String n) : super(v, n);
+}
+
+class ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode extends $pb.ProtobufEnum {
+  static const ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode TEST_ONLY = ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode._(0, _omitEnumNames ? '' : 'TEST_ONLY');
+  static const ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode CONFIRM_ONLY = ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode._(1, _omitEnumNames ? '' : 'CONFIRM_ONLY');
+  static const ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode TEST_AND_CONFIRM = ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode._(2, _omitEnumNames ? '' : 'TEST_AND_CONFIRM');
+  static const ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode UPLOAD_ONLY = ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode._(3, _omitEnumNames ? '' : 'UPLOAD_ONLY');
+
+  static const $core.List<ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode> values = <ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode> [
+    TEST_ONLY,
+    CONFIRM_ONLY,
+    TEST_AND_CONFIRM,
+    UPLOAD_ONLY,
+  ];
+
+  static final $core.Map<$core.int, ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode? valueOf($core.int value) => _byValue[value];
+
+  const ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode._($core.int v, $core.String n) : super(v, n);
 }
 
 class ProtoLogMessage_LogCategory extends $pb.ProtobufEnum {

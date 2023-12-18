@@ -454,6 +454,7 @@ class ProtoFirmwareUpgradeConfiguration extends $pb.GeneratedMessage {
     $fixnum.Int64? pipelineDepth,
     ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment? byteAlignment,
     $fixnum.Int64? reassemblyBufferSize,
+    ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode? firmwareUpgradeMode,
   }) {
     final $result = create();
     if (estimatedSwapTimeMs != null) {
@@ -471,6 +472,9 @@ class ProtoFirmwareUpgradeConfiguration extends $pb.GeneratedMessage {
     if (reassemblyBufferSize != null) {
       $result.reassemblyBufferSize = reassemblyBufferSize;
     }
+    if (firmwareUpgradeMode != null) {
+      $result.firmwareUpgradeMode = firmwareUpgradeMode;
+    }
     return $result;
   }
   ProtoFirmwareUpgradeConfiguration._() : super();
@@ -483,6 +487,7 @@ class ProtoFirmwareUpgradeConfiguration extends $pb.GeneratedMessage {
     ..aInt64(3, _omitFieldNames ? '' : 'pipelineDepth', protoName: 'pipelineDepth')
     ..e<ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment>(4, _omitFieldNames ? '' : 'byteAlignment', $pb.PbFieldType.OE, protoName: 'byteAlignment', defaultOrMaker: ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment.DISABLED, valueOf: ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment.valueOf, enumValues: ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment.values)
     ..a<$fixnum.Int64>(5, _omitFieldNames ? '' : 'reassemblyBufferSize', $pb.PbFieldType.OU6, protoName: 'reassemblyBufferSize', defaultOrMaker: $fixnum.Int64.ZERO)
+    ..e<ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode>(6, _omitFieldNames ? '' : 'firmwareUpgradeMode', $pb.PbFieldType.OE, protoName: 'firmwareUpgradeMode', defaultOrMaker: ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode.TEST_ONLY, valueOf: ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode.valueOf, enumValues: ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode.values)
     ..hasRequiredFields = false
   ;
 
@@ -551,6 +556,15 @@ class ProtoFirmwareUpgradeConfiguration extends $pb.GeneratedMessage {
   $core.bool hasReassemblyBufferSize() => $_has(4);
   @$pb.TagNumber(5)
   void clearReassemblyBufferSize() => clearField(5);
+
+  @$pb.TagNumber(6)
+  ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode get firmwareUpgradeMode => $_getN(5);
+  @$pb.TagNumber(6)
+  set firmwareUpgradeMode(ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasFirmwareUpgradeMode() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearFirmwareUpgradeMode() => clearField(6);
 }
 
 class ProtoProgressUpdateStreamArg extends $pb.GeneratedMessage {
