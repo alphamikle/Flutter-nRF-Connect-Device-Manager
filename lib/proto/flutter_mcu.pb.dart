@@ -34,25 +34,24 @@ class ProtoUpdateCallArgument extends $pb.GeneratedMessage {
     return $result;
   }
   ProtoUpdateCallArgument._() : super();
-  factory ProtoUpdateCallArgument.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ProtoUpdateCallArgument.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
   factory ProtoUpdateCallArgument.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProtoUpdateCallArgument', createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'deviceUuid')
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'firmwareData', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProtoUpdateCallArgument clone() => ProtoUpdateCallArgument()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProtoUpdateCallArgument copyWith(void Function(ProtoUpdateCallArgument) updates) => super.copyWith((message) => updates(message as ProtoUpdateCallArgument)) as ProtoUpdateCallArgument;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProtoUpdateCallArgument copyWith(void Function(ProtoUpdateCallArgument) updates) =>
+      super.copyWith((message) => updates(message as ProtoUpdateCallArgument)) as ProtoUpdateCallArgument;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -67,7 +66,10 @@ class ProtoUpdateCallArgument extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get deviceUuid => $_getSZ(0);
   @$pb.TagNumber(1)
-  set deviceUuid($core.String v) { $_setString(0, v); }
+  set deviceUuid($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDeviceUuid() => $_has(0);
   @$pb.TagNumber(1)
@@ -76,7 +78,10 @@ class ProtoUpdateCallArgument extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.List<$core.int> get firmwareData => $_getN(1);
   @$pb.TagNumber(2)
-  set firmwareData($core.List<$core.int> v) { $_setBytes(1, v); }
+  set firmwareData($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasFirmwareData() => $_has(1);
   @$pb.TagNumber(2)
@@ -99,18 +104,15 @@ class ProtoError extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProtoError', createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'localizedDescription', protoName: 'localizedDescription')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProtoError clone() => ProtoError()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
   ProtoError copyWith(void Function(ProtoError) updates) => super.copyWith((message) => updates(message as ProtoError)) as ProtoError;
 
   $pb.BuilderInfo get info_ => _i;
@@ -126,7 +128,10 @@ class ProtoError extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get localizedDescription => $_getSZ(0);
   @$pb.TagNumber(1)
-  set localizedDescription($core.String v) { $_setString(0, v); }
+  set localizedDescription($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasLocalizedDescription() => $_has(0);
   @$pb.TagNumber(1)
@@ -155,18 +160,15 @@ class Pair extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Pair', createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'key', $pb.PbFieldType.O3)
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OY)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Pair clone() => Pair()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
   Pair copyWith(void Function(Pair) updates) => super.copyWith((message) => updates(message as Pair)) as Pair;
 
   $pb.BuilderInfo get info_ => _i;
@@ -182,7 +184,10 @@ class Pair extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get key => $_getIZ(0);
   @$pb.TagNumber(1)
-  set key($core.int v) { $_setSignedInt32(0, v); }
+  set key($core.int v) {
+    $_setSignedInt32(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
@@ -191,7 +196,10 @@ class Pair extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.List<$core.int> get value => $_getN(1);
   @$pb.TagNumber(2)
-  set value($core.List<$core.int> v) { $_setBytes(1, v); }
+  set value($core.List<$core.int> v) {
+    $_setBytes(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
@@ -217,26 +225,25 @@ class ProtoUpdateWithImageCallArguments extends $pb.GeneratedMessage {
     return $result;
   }
   ProtoUpdateWithImageCallArguments._() : super();
-  factory ProtoUpdateWithImageCallArguments.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ProtoUpdateWithImageCallArguments.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
   factory ProtoUpdateWithImageCallArguments.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProtoUpdateWithImageCallArguments', createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'deviceUuid')
     ..pc<Pair>(2, _omitFieldNames ? '' : 'images', $pb.PbFieldType.PM, subBuilder: Pair.create)
     ..aOM<ProtoFirmwareUpgradeConfiguration>(3, _omitFieldNames ? '' : 'configuration', subBuilder: ProtoFirmwareUpgradeConfiguration.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProtoUpdateWithImageCallArguments clone() => ProtoUpdateWithImageCallArguments()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProtoUpdateWithImageCallArguments copyWith(void Function(ProtoUpdateWithImageCallArguments) updates) => super.copyWith((message) => updates(message as ProtoUpdateWithImageCallArguments)) as ProtoUpdateWithImageCallArguments;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProtoUpdateWithImageCallArguments copyWith(void Function(ProtoUpdateWithImageCallArguments) updates) =>
+      super.copyWith((message) => updates(message as ProtoUpdateWithImageCallArguments)) as ProtoUpdateWithImageCallArguments;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -251,7 +258,10 @@ class ProtoUpdateWithImageCallArguments extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get deviceUuid => $_getSZ(0);
   @$pb.TagNumber(1)
-  set deviceUuid($core.String v) { $_setString(0, v); }
+  set deviceUuid($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasDeviceUuid() => $_has(0);
   @$pb.TagNumber(1)
@@ -263,7 +273,10 @@ class ProtoUpdateWithImageCallArguments extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ProtoFirmwareUpgradeConfiguration get configuration => $_getN(2);
   @$pb.TagNumber(3)
-  set configuration(ProtoFirmwareUpgradeConfiguration v) { setField(3, v); }
+  set configuration(ProtoFirmwareUpgradeConfiguration v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasConfiguration() => $_has(2);
   @$pb.TagNumber(3)
@@ -296,7 +309,8 @@ class ProtoUpdateStateChangesStreamArg extends $pb.GeneratedMessage {
     return $result;
   }
   ProtoUpdateStateChangesStreamArg._() : super();
-  factory ProtoUpdateStateChangesStreamArg.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ProtoUpdateStateChangesStreamArg.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
   factory ProtoUpdateStateChangesStreamArg.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProtoUpdateStateChangesStreamArg', createEmptyInstance: create)
@@ -304,19 +318,17 @@ class ProtoUpdateStateChangesStreamArg extends $pb.GeneratedMessage {
     ..aOB(2, _omitFieldNames ? '' : 'done')
     ..aOM<ProtoError>(3, _omitFieldNames ? '' : 'error', subBuilder: ProtoError.create)
     ..aOM<ProtoUpdateStateChanges>(4, _omitFieldNames ? '' : 'updateStateChanges', protoName: 'updateStateChanges', subBuilder: ProtoUpdateStateChanges.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProtoUpdateStateChangesStreamArg clone() => ProtoUpdateStateChangesStreamArg()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProtoUpdateStateChangesStreamArg copyWith(void Function(ProtoUpdateStateChangesStreamArg) updates) => super.copyWith((message) => updates(message as ProtoUpdateStateChangesStreamArg)) as ProtoUpdateStateChangesStreamArg;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProtoUpdateStateChangesStreamArg copyWith(void Function(ProtoUpdateStateChangesStreamArg) updates) =>
+      super.copyWith((message) => updates(message as ProtoUpdateStateChangesStreamArg)) as ProtoUpdateStateChangesStreamArg;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -331,7 +343,10 @@ class ProtoUpdateStateChangesStreamArg extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get uuid => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uuid($core.String v) { $_setString(0, v); }
+  set uuid($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUuid() => $_has(0);
   @$pb.TagNumber(1)
@@ -340,7 +355,10 @@ class ProtoUpdateStateChangesStreamArg extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get done => $_getBF(1);
   @$pb.TagNumber(2)
-  set done($core.bool v) { $_setBool(1, v); }
+  set done($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDone() => $_has(1);
   @$pb.TagNumber(2)
@@ -349,7 +367,10 @@ class ProtoUpdateStateChangesStreamArg extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ProtoError get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error(ProtoError v) { setField(3, v); }
+  set error(ProtoError v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
@@ -360,7 +381,10 @@ class ProtoUpdateStateChangesStreamArg extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ProtoUpdateStateChanges get updateStateChanges => $_getN(3);
   @$pb.TagNumber(4)
-  set updateStateChanges(ProtoUpdateStateChanges v) { setField(4, v); }
+  set updateStateChanges(ProtoUpdateStateChanges v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasUpdateStateChanges() => $_has(3);
   @$pb.TagNumber(4)
@@ -388,26 +412,33 @@ class ProtoUpdateStateChanges extends $pb.GeneratedMessage {
     return $result;
   }
   ProtoUpdateStateChanges._() : super();
-  factory ProtoUpdateStateChanges.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ProtoUpdateStateChanges.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
   factory ProtoUpdateStateChanges.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProtoUpdateStateChanges', createEmptyInstance: create)
-    ..e<ProtoUpdateStateChanges_FirmwareUpgradeState>(1, _omitFieldNames ? '' : 'oldState', $pb.PbFieldType.OE, protoName: 'oldState', defaultOrMaker: ProtoUpdateStateChanges_FirmwareUpgradeState.NONE, valueOf: ProtoUpdateStateChanges_FirmwareUpgradeState.valueOf, enumValues: ProtoUpdateStateChanges_FirmwareUpgradeState.values)
-    ..e<ProtoUpdateStateChanges_FirmwareUpgradeState>(2, _omitFieldNames ? '' : 'newState', $pb.PbFieldType.OE, protoName: 'newState', defaultOrMaker: ProtoUpdateStateChanges_FirmwareUpgradeState.NONE, valueOf: ProtoUpdateStateChanges_FirmwareUpgradeState.valueOf, enumValues: ProtoUpdateStateChanges_FirmwareUpgradeState.values)
+    ..e<ProtoUpdateStateChanges_FirmwareUpgradeState>(1, _omitFieldNames ? '' : 'oldState', $pb.PbFieldType.OE,
+        protoName: 'oldState',
+        defaultOrMaker: ProtoUpdateStateChanges_FirmwareUpgradeState.NONE,
+        valueOf: ProtoUpdateStateChanges_FirmwareUpgradeState.valueOf,
+        enumValues: ProtoUpdateStateChanges_FirmwareUpgradeState.values)
+    ..e<ProtoUpdateStateChanges_FirmwareUpgradeState>(2, _omitFieldNames ? '' : 'newState', $pb.PbFieldType.OE,
+        protoName: 'newState',
+        defaultOrMaker: ProtoUpdateStateChanges_FirmwareUpgradeState.NONE,
+        valueOf: ProtoUpdateStateChanges_FirmwareUpgradeState.valueOf,
+        enumValues: ProtoUpdateStateChanges_FirmwareUpgradeState.values)
     ..aOB(3, _omitFieldNames ? '' : 'canceled')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProtoUpdateStateChanges clone() => ProtoUpdateStateChanges()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProtoUpdateStateChanges copyWith(void Function(ProtoUpdateStateChanges) updates) => super.copyWith((message) => updates(message as ProtoUpdateStateChanges)) as ProtoUpdateStateChanges;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProtoUpdateStateChanges copyWith(void Function(ProtoUpdateStateChanges) updates) =>
+      super.copyWith((message) => updates(message as ProtoUpdateStateChanges)) as ProtoUpdateStateChanges;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -422,7 +453,10 @@ class ProtoUpdateStateChanges extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ProtoUpdateStateChanges_FirmwareUpgradeState get oldState => $_getN(0);
   @$pb.TagNumber(1)
-  set oldState(ProtoUpdateStateChanges_FirmwareUpgradeState v) { setField(1, v); }
+  set oldState(ProtoUpdateStateChanges_FirmwareUpgradeState v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasOldState() => $_has(0);
   @$pb.TagNumber(1)
@@ -431,7 +465,10 @@ class ProtoUpdateStateChanges extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ProtoUpdateStateChanges_FirmwareUpgradeState get newState => $_getN(1);
   @$pb.TagNumber(2)
-  set newState(ProtoUpdateStateChanges_FirmwareUpgradeState v) { setField(2, v); }
+  set newState(ProtoUpdateStateChanges_FirmwareUpgradeState v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasNewState() => $_has(1);
   @$pb.TagNumber(2)
@@ -440,7 +477,10 @@ class ProtoUpdateStateChanges extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get canceled => $_getBF(2);
   @$pb.TagNumber(3)
-  set canceled($core.bool v) { $_setBool(2, v); }
+  set canceled($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasCanceled() => $_has(2);
   @$pb.TagNumber(3)
@@ -478,29 +518,37 @@ class ProtoFirmwareUpgradeConfiguration extends $pb.GeneratedMessage {
     return $result;
   }
   ProtoFirmwareUpgradeConfiguration._() : super();
-  factory ProtoFirmwareUpgradeConfiguration.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ProtoFirmwareUpgradeConfiguration.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
   factory ProtoFirmwareUpgradeConfiguration.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProtoFirmwareUpgradeConfiguration', createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'estimatedSwapTimeMs', protoName: 'estimatedSwapTimeMs')
     ..aOB(2, _omitFieldNames ? '' : 'eraseAppSettings', protoName: 'eraseAppSettings')
     ..aInt64(3, _omitFieldNames ? '' : 'pipelineDepth', protoName: 'pipelineDepth')
-    ..e<ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment>(4, _omitFieldNames ? '' : 'byteAlignment', $pb.PbFieldType.OE, protoName: 'byteAlignment', defaultOrMaker: ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment.DISABLED, valueOf: ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment.valueOf, enumValues: ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment.values)
-    ..a<$fixnum.Int64>(5, _omitFieldNames ? '' : 'reassemblyBufferSize', $pb.PbFieldType.OU6, protoName: 'reassemblyBufferSize', defaultOrMaker: $fixnum.Int64.ZERO)
-    ..e<ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode>(6, _omitFieldNames ? '' : 'firmwareUpgradeMode', $pb.PbFieldType.OE, protoName: 'firmwareUpgradeMode', defaultOrMaker: ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode.TEST_ONLY, valueOf: ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode.valueOf, enumValues: ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode.values)
-    ..hasRequiredFields = false
-  ;
+    ..e<ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment>(4, _omitFieldNames ? '' : 'byteAlignment', $pb.PbFieldType.OE,
+        protoName: 'byteAlignment',
+        defaultOrMaker: ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment.DISABLED,
+        valueOf: ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment.valueOf,
+        enumValues: ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment.values)
+    ..a<$fixnum.Int64>(5, _omitFieldNames ? '' : 'reassemblyBufferSize', $pb.PbFieldType.OU6,
+        protoName: 'reassemblyBufferSize', defaultOrMaker: $fixnum.Int64.ZERO)
+    ..e<ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode>(6, _omitFieldNames ? '' : 'firmwareUpgradeMode', $pb.PbFieldType.OE,
+        protoName: 'firmwareUpgradeMode',
+        defaultOrMaker: ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode.TEST_ONLY,
+        valueOf: ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode.valueOf,
+        enumValues: ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode.values)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProtoFirmwareUpgradeConfiguration clone() => ProtoFirmwareUpgradeConfiguration()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProtoFirmwareUpgradeConfiguration copyWith(void Function(ProtoFirmwareUpgradeConfiguration) updates) => super.copyWith((message) => updates(message as ProtoFirmwareUpgradeConfiguration)) as ProtoFirmwareUpgradeConfiguration;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProtoFirmwareUpgradeConfiguration copyWith(void Function(ProtoFirmwareUpgradeConfiguration) updates) =>
+      super.copyWith((message) => updates(message as ProtoFirmwareUpgradeConfiguration)) as ProtoFirmwareUpgradeConfiguration;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -515,7 +563,10 @@ class ProtoFirmwareUpgradeConfiguration extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get estimatedSwapTimeMs => $_getI64(0);
   @$pb.TagNumber(1)
-  set estimatedSwapTimeMs($fixnum.Int64 v) { $_setInt64(0, v); }
+  set estimatedSwapTimeMs($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasEstimatedSwapTimeMs() => $_has(0);
   @$pb.TagNumber(1)
@@ -524,7 +575,10 @@ class ProtoFirmwareUpgradeConfiguration extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get eraseAppSettings => $_getBF(1);
   @$pb.TagNumber(2)
-  set eraseAppSettings($core.bool v) { $_setBool(1, v); }
+  set eraseAppSettings($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEraseAppSettings() => $_has(1);
   @$pb.TagNumber(2)
@@ -533,7 +587,10 @@ class ProtoFirmwareUpgradeConfiguration extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $fixnum.Int64 get pipelineDepth => $_getI64(2);
   @$pb.TagNumber(3)
-  set pipelineDepth($fixnum.Int64 v) { $_setInt64(2, v); }
+  set pipelineDepth($fixnum.Int64 v) {
+    $_setInt64(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasPipelineDepth() => $_has(2);
   @$pb.TagNumber(3)
@@ -542,7 +599,10 @@ class ProtoFirmwareUpgradeConfiguration extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment get byteAlignment => $_getN(3);
   @$pb.TagNumber(4)
-  set byteAlignment(ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment v) { setField(4, v); }
+  set byteAlignment(ProtoFirmwareUpgradeConfiguration_ImageUploadAlignment v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasByteAlignment() => $_has(3);
   @$pb.TagNumber(4)
@@ -551,7 +611,10 @@ class ProtoFirmwareUpgradeConfiguration extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   $fixnum.Int64 get reassemblyBufferSize => $_getI64(4);
   @$pb.TagNumber(5)
-  set reassemblyBufferSize($fixnum.Int64 v) { $_setInt64(4, v); }
+  set reassemblyBufferSize($fixnum.Int64 v) {
+    $_setInt64(4, v);
+  }
+
   @$pb.TagNumber(5)
   $core.bool hasReassemblyBufferSize() => $_has(4);
   @$pb.TagNumber(5)
@@ -560,7 +623,10 @@ class ProtoFirmwareUpgradeConfiguration extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode get firmwareUpgradeMode => $_getN(5);
   @$pb.TagNumber(6)
-  set firmwareUpgradeMode(ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode v) { setField(6, v); }
+  set firmwareUpgradeMode(ProtoFirmwareUpgradeConfiguration_FirmwareUpgradeMode v) {
+    setField(6, v);
+  }
+
   @$pb.TagNumber(6)
   $core.bool hasFirmwareUpgradeMode() => $_has(5);
   @$pb.TagNumber(6)
@@ -590,7 +656,8 @@ class ProtoProgressUpdateStreamArg extends $pb.GeneratedMessage {
     return $result;
   }
   ProtoProgressUpdateStreamArg._() : super();
-  factory ProtoProgressUpdateStreamArg.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ProtoProgressUpdateStreamArg.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
   factory ProtoProgressUpdateStreamArg.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProtoProgressUpdateStreamArg', createEmptyInstance: create)
@@ -598,19 +665,17 @@ class ProtoProgressUpdateStreamArg extends $pb.GeneratedMessage {
     ..aOB(2, _omitFieldNames ? '' : 'done')
     ..aOM<ProtoError>(3, _omitFieldNames ? '' : 'error', subBuilder: ProtoError.create)
     ..aOM<ProtoProgressUpdate>(4, _omitFieldNames ? '' : 'progressUpdate', protoName: 'progressUpdate', subBuilder: ProtoProgressUpdate.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProtoProgressUpdateStreamArg clone() => ProtoProgressUpdateStreamArg()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProtoProgressUpdateStreamArg copyWith(void Function(ProtoProgressUpdateStreamArg) updates) => super.copyWith((message) => updates(message as ProtoProgressUpdateStreamArg)) as ProtoProgressUpdateStreamArg;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProtoProgressUpdateStreamArg copyWith(void Function(ProtoProgressUpdateStreamArg) updates) =>
+      super.copyWith((message) => updates(message as ProtoProgressUpdateStreamArg)) as ProtoProgressUpdateStreamArg;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -625,7 +690,10 @@ class ProtoProgressUpdateStreamArg extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get uuid => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uuid($core.String v) { $_setString(0, v); }
+  set uuid($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUuid() => $_has(0);
   @$pb.TagNumber(1)
@@ -634,7 +702,10 @@ class ProtoProgressUpdateStreamArg extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get done => $_getBF(1);
   @$pb.TagNumber(2)
-  set done($core.bool v) { $_setBool(1, v); }
+  set done($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDone() => $_has(1);
   @$pb.TagNumber(2)
@@ -643,7 +714,10 @@ class ProtoProgressUpdateStreamArg extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ProtoError get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error(ProtoError v) { setField(3, v); }
+  set error(ProtoError v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
@@ -654,7 +728,10 @@ class ProtoProgressUpdateStreamArg extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   ProtoProgressUpdate get progressUpdate => $_getN(3);
   @$pb.TagNumber(4)
-  set progressUpdate(ProtoProgressUpdate v) { setField(4, v); }
+  set progressUpdate(ProtoProgressUpdate v) {
+    setField(4, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasProgressUpdate() => $_has(3);
   @$pb.TagNumber(4)
@@ -689,19 +766,17 @@ class ProtoProgressUpdate extends $pb.GeneratedMessage {
     ..a<$fixnum.Int64>(1, _omitFieldNames ? '' : 'bytesSent', $pb.PbFieldType.OU6, protoName: 'bytesSent', defaultOrMaker: $fixnum.Int64.ZERO)
     ..a<$fixnum.Int64>(2, _omitFieldNames ? '' : 'imageSize', $pb.PbFieldType.OU6, protoName: 'imageSize', defaultOrMaker: $fixnum.Int64.ZERO)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'timestamp', $pb.PbFieldType.OD)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProtoProgressUpdate clone() => ProtoProgressUpdate()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProtoProgressUpdate copyWith(void Function(ProtoProgressUpdate) updates) => super.copyWith((message) => updates(message as ProtoProgressUpdate)) as ProtoProgressUpdate;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProtoProgressUpdate copyWith(void Function(ProtoProgressUpdate) updates) =>
+      super.copyWith((message) => updates(message as ProtoProgressUpdate)) as ProtoProgressUpdate;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -716,7 +791,10 @@ class ProtoProgressUpdate extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $fixnum.Int64 get bytesSent => $_getI64(0);
   @$pb.TagNumber(1)
-  set bytesSent($fixnum.Int64 v) { $_setInt64(0, v); }
+  set bytesSent($fixnum.Int64 v) {
+    $_setInt64(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasBytesSent() => $_has(0);
   @$pb.TagNumber(1)
@@ -725,7 +803,10 @@ class ProtoProgressUpdate extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $fixnum.Int64 get imageSize => $_getI64(1);
   @$pb.TagNumber(2)
-  set imageSize($fixnum.Int64 v) { $_setInt64(1, v); }
+  set imageSize($fixnum.Int64 v) {
+    $_setInt64(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasImageSize() => $_has(1);
   @$pb.TagNumber(2)
@@ -734,7 +815,10 @@ class ProtoProgressUpdate extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.double get timestamp => $_getN(2);
   @$pb.TagNumber(3)
-  set timestamp($core.double v) { $_setDouble(2, v); }
+  set timestamp($core.double v) {
+    $_setDouble(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasTimestamp() => $_has(2);
   @$pb.TagNumber(3)
@@ -765,7 +849,8 @@ class ProtoLogMessageStreamArg extends $pb.GeneratedMessage {
     return $result;
   }
   ProtoLogMessageStreamArg._() : super();
-  factory ProtoLogMessageStreamArg.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ProtoLogMessageStreamArg.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
   factory ProtoLogMessageStreamArg.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProtoLogMessageStreamArg', createEmptyInstance: create)
@@ -773,19 +858,17 @@ class ProtoLogMessageStreamArg extends $pb.GeneratedMessage {
     ..aOB(2, _omitFieldNames ? '' : 'done')
     ..aOM<ProtoError>(3, _omitFieldNames ? '' : 'error', subBuilder: ProtoError.create)
     ..pc<ProtoLogMessage>(4, _omitFieldNames ? '' : 'protoLogMessage', $pb.PbFieldType.PM, protoName: 'protoLogMessage', subBuilder: ProtoLogMessage.create)
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProtoLogMessageStreamArg clone() => ProtoLogMessageStreamArg()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProtoLogMessageStreamArg copyWith(void Function(ProtoLogMessageStreamArg) updates) => super.copyWith((message) => updates(message as ProtoLogMessageStreamArg)) as ProtoLogMessageStreamArg;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProtoLogMessageStreamArg copyWith(void Function(ProtoLogMessageStreamArg) updates) =>
+      super.copyWith((message) => updates(message as ProtoLogMessageStreamArg)) as ProtoLogMessageStreamArg;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -800,7 +883,10 @@ class ProtoLogMessageStreamArg extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get uuid => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uuid($core.String v) { $_setString(0, v); }
+  set uuid($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUuid() => $_has(0);
   @$pb.TagNumber(1)
@@ -809,7 +895,10 @@ class ProtoLogMessageStreamArg extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get done => $_getBF(1);
   @$pb.TagNumber(2)
-  set done($core.bool v) { $_setBool(1, v); }
+  set done($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasDone() => $_has(1);
   @$pb.TagNumber(2)
@@ -818,7 +907,10 @@ class ProtoLogMessageStreamArg extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ProtoError get error => $_getN(2);
   @$pb.TagNumber(3)
-  set error(ProtoError v) { setField(3, v); }
+  set error(ProtoError v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasError() => $_has(2);
   @$pb.TagNumber(3)
@@ -858,21 +950,26 @@ class ProtoLogMessage extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProtoLogMessage', createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'message')
-    ..e<ProtoLogMessage_LogCategory>(2, _omitFieldNames ? '' : 'logCategory', $pb.PbFieldType.OE, protoName: 'logCategory', defaultOrMaker: ProtoLogMessage_LogCategory.TRANSPORT, valueOf: ProtoLogMessage_LogCategory.valueOf, enumValues: ProtoLogMessage_LogCategory.values)
-    ..e<ProtoLogMessage_LogLevel>(3, _omitFieldNames ? '' : 'logLevel', $pb.PbFieldType.OE, protoName: 'logLevel', defaultOrMaker: ProtoLogMessage_LogLevel.DEBUG, valueOf: ProtoLogMessage_LogLevel.valueOf, enumValues: ProtoLogMessage_LogLevel.values)
+    ..e<ProtoLogMessage_LogCategory>(2, _omitFieldNames ? '' : 'logCategory', $pb.PbFieldType.OE,
+        protoName: 'logCategory',
+        defaultOrMaker: ProtoLogMessage_LogCategory.TRANSPORT,
+        valueOf: ProtoLogMessage_LogCategory.valueOf,
+        enumValues: ProtoLogMessage_LogCategory.values)
+    ..e<ProtoLogMessage_LogLevel>(3, _omitFieldNames ? '' : 'logLevel', $pb.PbFieldType.OE,
+        protoName: 'logLevel',
+        defaultOrMaker: ProtoLogMessage_LogLevel.DEBUG,
+        valueOf: ProtoLogMessage_LogLevel.valueOf,
+        enumValues: ProtoLogMessage_LogLevel.values)
     ..aInt64(4, _omitFieldNames ? '' : 'logDateTime', protoName: 'logDateTime')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProtoLogMessage clone() => ProtoLogMessage()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
   ProtoLogMessage copyWith(void Function(ProtoLogMessage) updates) => super.copyWith((message) => updates(message as ProtoLogMessage)) as ProtoLogMessage;
 
   $pb.BuilderInfo get info_ => _i;
@@ -888,7 +985,10 @@ class ProtoLogMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get message => $_getSZ(0);
   @$pb.TagNumber(1)
-  set message($core.String v) { $_setString(0, v); }
+  set message($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasMessage() => $_has(0);
   @$pb.TagNumber(1)
@@ -897,7 +997,10 @@ class ProtoLogMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ProtoLogMessage_LogCategory get logCategory => $_getN(1);
   @$pb.TagNumber(2)
-  set logCategory(ProtoLogMessage_LogCategory v) { setField(2, v); }
+  set logCategory(ProtoLogMessage_LogCategory v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasLogCategory() => $_has(1);
   @$pb.TagNumber(2)
@@ -906,7 +1009,10 @@ class ProtoLogMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   ProtoLogMessage_LogLevel get logLevel => $_getN(2);
   @$pb.TagNumber(3)
-  set logLevel(ProtoLogMessage_LogLevel v) { setField(3, v); }
+  set logLevel(ProtoLogMessage_LogLevel v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasLogLevel() => $_has(2);
   @$pb.TagNumber(3)
@@ -915,7 +1021,10 @@ class ProtoLogMessage extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $fixnum.Int64 get logDateTime => $_getI64(3);
   @$pb.TagNumber(4)
-  set logDateTime($fixnum.Int64 v) { $_setInt64(3, v); }
+  set logDateTime($fixnum.Int64 v) {
+    $_setInt64(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasLogDateTime() => $_has(3);
   @$pb.TagNumber(4)
@@ -937,25 +1046,24 @@ class ProtoMessageLiveLogEnabled extends $pb.GeneratedMessage {
     return $result;
   }
   ProtoMessageLiveLogEnabled._() : super();
-  factory ProtoMessageLiveLogEnabled.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ProtoMessageLiveLogEnabled.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
   factory ProtoMessageLiveLogEnabled.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProtoMessageLiveLogEnabled', createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'uuid')
     ..aOB(2, _omitFieldNames ? '' : 'enabled')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ProtoMessageLiveLogEnabled clone() => ProtoMessageLiveLogEnabled()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ProtoMessageLiveLogEnabled copyWith(void Function(ProtoMessageLiveLogEnabled) updates) => super.copyWith((message) => updates(message as ProtoMessageLiveLogEnabled)) as ProtoMessageLiveLogEnabled;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ProtoMessageLiveLogEnabled copyWith(void Function(ProtoMessageLiveLogEnabled) updates) =>
+      super.copyWith((message) => updates(message as ProtoMessageLiveLogEnabled)) as ProtoMessageLiveLogEnabled;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -970,7 +1078,10 @@ class ProtoMessageLiveLogEnabled extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get uuid => $_getSZ(0);
   @$pb.TagNumber(1)
-  set uuid($core.String v) { $_setString(0, v); }
+  set uuid($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasUuid() => $_has(0);
   @$pb.TagNumber(1)
@@ -979,13 +1090,15 @@ class ProtoMessageLiveLogEnabled extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool get enabled => $_getBF(1);
   @$pb.TagNumber(2)
-  set enabled($core.bool v) { $_setBool(1, v); }
+  set enabled($core.bool v) {
+    $_setBool(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasEnabled() => $_has(1);
   @$pb.TagNumber(2)
   void clearEnabled() => clearField(2);
 }
-
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
 const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');

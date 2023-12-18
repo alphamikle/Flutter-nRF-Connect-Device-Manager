@@ -32,8 +32,7 @@ class FirmwareUpgradeConfiguration {
     this.byteAlignment = ImageUploadAlignment.fourByte,
     this.reassemblyBufferSize = 0,
     this.firmwareUpgradeMode = FirmwareUpgradeMode.confirmOnly,
-  }) : assert(reassemblyBufferSize >= 0,
-            "Reassembly Buffer Size must be a positive number or 0");
+  }) : assert(reassemblyBufferSize >= 0, "Reassembly Buffer Size must be a positive number or 0");
 }
 
 /// Object that handles update process.
@@ -66,9 +65,7 @@ abstract class FirmwareUpdateManager {
   /// This is the full-featured API to start DFU update, including support for Multi-Image uploads.
   ///
   /// [images] is a `Map<int, Uint8List>` where key is an image core index
-  Future<void> update(List<Tuple2<int, Uint8List>> images,
-      {FirmwareUpgradeConfiguration configuration =
-          const FirmwareUpgradeConfiguration()});
+  Future<void> update(List<Tuple2<int, Uint8List>> images, {FirmwareUpgradeConfiguration configuration = const FirmwareUpgradeConfiguration()});
 
   /// Pause the update process.
   Future<void> pause();
